@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programa Mais INglês - MT</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    
+    
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #4e6fbc;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 500px;
+    background: #4e6fbc;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 70px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 28%;
+    height: 28%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4e6fbc;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: lef;
+}
+
+.policy img{
+    width: 857px;
+    margin-left: 80px;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4e6fbc;
+    display:block;
+    width: 46%;
+    height: 630px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card > .contenido-texto-card{
+    width: 105%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card li {
+    margin-left: 40px;
+    margin-right: 35px;
+    color: #fff;
+}
+.cards .card > .contenido-texto-card h4 {
+    margin-left: 30px;
+    font-size: 18px;
+    color: yellow;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.gestores h2{
+    color: #4e6fbc;
+    text-align: center;
+    padding: 15px;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+/* ------------ RESPONSIVIDADE TABLET-----------------*/
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+
+    .policy img{
+        width: 635px;
+        
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+        height: 540px;
+    }
+
+
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+/* ------------ RESPONSIVIDADE SMARTPHONE-----------------*/
+
+@media screen and (max-width:500px){
+
+    .textos-header h1{
+        font-size: 33px;
+    }
+
+    .titulo {
+        font-size: 23px;
+        color: 4e6fbc;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 95%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    .policy img{
+        width: 320px;
+        margin-left: 6px;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 940px;
+        display:block;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .cards .card  li{
+        margin-top: -5px;
+        text-align: left;
+        margin-left: 45px;  
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 17px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+
+        <section class="textos-header">
+
+            <h1> Política de Línguas Estrangeiras </h1> <br><br>
+      <!--      <h2> Programa Mais Inglês - MT </h2>   -->
+            
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo"> Programa Mais Inglês - MT </h2>
+            <div class="contenedor-sobre-nosotros">
+
+                <img src="https://github.com/teachersouza/images/blob/main/logo-mais-ingles.jpg?raw=true" alt="" class="imagen-about-us">
+                
+                <div class="contenido-textos">
+                    <h3><span>1</span> Objetivo </h3>
+                    <p> Promover uma educação em línguas estrangeiras que seja consciente e crítica e que desenvolva os eixos da oralidade, leitura, escrita, conhecimentos linguísticos e dimensão intercultural. E assim, permitir que os estudantes ampliem suas possibilidades de interação nos mais diversos contextos.</p>
+
+                    <h3><span>2</span> Contexto </h3>
+                    <p> A Política Pública de Línguas Estrangeiras está composta de 04 programas. O <b> Mais Inglês - MT</b> está inserido na Política de Línguas Estrangeiras (Decreto Nº 1.497/2022). </p>
+                </div>
+            </div>
+
+                <div class="policy">
+                    <img src="https://github.com/teachersouza/images/blob/main/Image1.png?raw=true" alt="">
+                </div>
+        </section>
+        
+<!-- seção repetida -->
+
+<section class="contenedor sobre-nosotros">
+    <h2 class="titulo"> Atribuições do Formador </h2>
+    <div class="contenedor-sobre-nosotros">
+
+        <img src="https://che.org.il/wp-content/uploads/2019/12/shutterstock_602226047-768x512.jpg" alt="" class="imagen-about-us">
+        
+        <div class="contenido-textos">
+            <h3><span>3</span> Ações </h3>
+            <p> - Visitar as escolas para promover o engajamento dos professores de inglês e dos estudantes;<br> <br>
+            - Acompanhar o engajamento dos professores e dos estudantes no curso da EF por meio do Power BI; <br> <br>
+            - Orientar/auxiliar os professores no processo de ativação do e-mail e redefinição de senha dos estudantes; <br> <br>
+            - Auxiliar os professores no monitoramento das atividades via Data Studio. </p>
+        </div>
+    </div>
+
+        <div class="policy">
+            <img src="https://github.com/teachersouza/images/blob/main/Image3.png?raw=true" alt="">
+        </div> <br><br>
+
+
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo"> Ações e metas futuras </h2>
+            <div class="contenedor-sobre-nosotros">
+        
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_CcO4gWefmToKd_komw4b7ScItc1XkRFUkImcBXEjPKKAs0zYV3ts0dULr9nt5sfdB8&usqp=CAU" alt="" class="imagen-about-us">
+                
+                <div class="contenido-textos">
+                  
+
+                    <p><ul> 
+                        <li>100% dos estudantes alcançarem o nível de proficiência mínimo A2 para o Ensino Fundamental 1 até 2024;</li>
+                        <li>100% dos estudantes alcançarem o nível de proficiência mínimo B2 para o Ensino Fundamental Anos finais e Ensino Médio até 2024;</li>
+                        <li>Ampliar para uma escola vocacionada à línguas em cada DRE;</li>
+                        <li>Engajamento de 100% dos professores e estudantes do Ensino Médio na plataforma digital até 2023;</li>
+                        <li>Implantar o currículo com aprofundamento em língua espanhola em, no mínimo, 3 escolas no ano de 2023;</li>
+                        <li>100% dos professores efetivos das escolas vocacionadas com nível de proficiência B2 até 2024;</li>
+                        <li>Implantar uma escola bilíngue até 2025.</li> </ul></p>      
+                </div>
+            </div>
+
+
+            <h2>Importante </h2>
+            <p>No caso do Ensino Médio, em 2022 o uso do material estruturado e da plataforma EF era intercalado. Ou seja, numa semana o professor usava o material FGV e na outra semana usava a plataforma EF. </p> <br>
+
+            <p>Em 2023 a Plataforma EF será o principal recurso para uso em sala de aula nas turmas de 8º e 9º anos do Ensino Fundamental e nas turmas de 1º, 2º e 3º anos do Ensino Médio.</p>
+
+        
+</section>
+
+<!-- Aqui termina seção repetida-->
+
+
+
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Links</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-student.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="http://www3.seduc.mt.gov.br/acesso-estudante" target="_blank" rel="noopener noreferrer">
+                            <img src="img/icono1.png" alt=""></a>
+                            <a href="http://www3.seduc.mt.gov.br/acesso-estudante" target="_blank" rel="noopener noreferrer"><p> Ativação do E-mail </p></a>
+                        </div>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-senha.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="https://sites.google.com/edu.mt.gov.br/redefinir-senha" target="_blank" rel="noopener noreferrer"><img src="img/icono1.png" alt=""></a>
+                            <a href="https://sites.google.com/edu.mt.gov.br/redefinir-senha" target="_blank" rel="noopener noreferrer"><p>Redefinição de Senha</p></a>
+                        </div>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-plataforma.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="http://learn.corporate.ef.com" target="_blank" rel="noopener noreferrer"><img src="img/icono1.png" alt=""></a>
+                            <a href="http://learn.corporate.ef.com" target="_blank" rel="noopener noreferrer"><p>Plataforma EF</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-app.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="http://play.google.com/store/apps/details?id=com.ef.core.engage.corporate" target="_blank" rel="noopener noreferrer"><img src="img/icono1.png" alt=""></a>
+                            <a href="http://play.google.com/store/apps/details?id=com.ef.core.engage.corporate" target="_blank" rel="noopener noreferrer"><p>Baixar Aplicativo EF</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-data.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="https://datastudio.google.com/u/0/reporting/bacab8c7-eb77-4bd9-91a5-27c8eac4edee/page/38erC" target="_blank" rel="noopener noreferrer"><img src="img/icono1.png" alt=""></a>
+                            <a href="https://datastudio.google.com/u/5/reporting/bacab8c7-eb77-4bd9-91a5-27c8eac4edee/page/38" target="_blank" rel="noopener noreferrer"><p>Data Studio</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-reporting.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="http://learn.corporate.ef.com/reportingcenter" target="_blank" rel="noopener noreferrer"><img src="img/icono1.png" alt=""></a>
+                            <a href="http://learn.corporate.ef.com/reportingcenter" target="_blank" rel="noopener noreferrer"><p>Reporting Center</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-bi.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="http://www3.seduc.mt.gov.br/painel-maisinglesmt" target="_blank" rel="noopener noreferrer"><img src="img/icono1.png" alt=""></a>
+                            <a href="http://www3.seduc.mt.gov.br/painel-maisinglesmt" target="_blank" rel="noopener noreferrer"><p>Painel Power BI</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://github.com/teachersouza/images/blob/main/logo-portal.png?raw=true" alt="">
+                        <div class="hover-galeria">
+                            <a href="https://sites.google.com/view/portaldoembaixadormt/sobre-o-programa?authuser=0" target="_blank" rel="noopener noreferrer"><img src="img/icono1.png" alt=""></a>
+                            <a href="https://sites.google.com/view/portaldoembaixadormt/sobre-o-programa?authuser=0" target="_blank" rel="noopener noreferrer"><p>Portal do Formador</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo">Ações que...</h2>
+            <div class="cards">
+                <div class="card">
+                    
+                    <div class="contenido-texto-card">
+                       <br> <h4>Deram certo</h4>
+                        <p><ul>
+                            <li> Manter contato com os teachers via grupo de WhatsApp.</li><br>
+
+                            <li>Utilizar a plataforma (fazer o curso) para conhecer o produto.</li> <br>
+
+                            <li> Envolver a gestão escolar nos diálogos sobre o engajamento da escola.</li> <br>
+
+                            <li> Realizar a ativação do e-mail junto com os alunos (Pedir para a escola disponibilizar antecipadamente os códigos dos alunos).</li><br>
+
+                            <li> Levar os e-mails já ativados e senhas redefinidas para mostrar como acessar a plataforma.</li><br>
+
+                            <li> Realizar o primeiro acesso com os alunos.</li><br>
+
+                            <li> Realizar e registrar (com fotos) entregas de certificados aos alunos mais engajados.</li><br>
+
+                            <li> Solicitar um plano de ação às escolas (fornecer um modelo em branco para facilitar).</li><br>
+
+                            <li> Incentivar/sugerir ações de engajamento (gincanas, semana mais inglês, etc. </li>
+
+                        </ul></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contenido-texto-card">
+                        <br> <h4>Não deram certo</h4> 
+                        <p><ul>
+                            <li> Visitar a escola e apenas incentivar os estudantes a usar a plataforma.</li><br>
+
+                            <li> Explicar como ativar o e-mail e realizar o primeiro acesso e depois deixar um tutorial em forma de imagens ou de vídeos.</li> <br>
+
+                            <li> Manter diálogo sobre o desempenho dos alunos com o professor sem envolver a coordenação.</li> <br>
+
+                            <li> Visitar a escola sem ter agendado previamente com a coordenação.</li> 
+                        </ul></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Materiais</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="https://m.media-amazon.com/images/I/518HPKH0rtL._SX369_BO1,204,203,200_.jpg" alt="">
+                        <h3>Pearson</h3>
+                        <p>Coleção <b><i>Dream Kids:</i></b> <br> - Para estudantes do 1º ao 5º ano do Ensino Fundamental.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="http://www3.seduc.mt.gov.br/documents/8125245/18862212/SEISTEMA+ESTRUTURADO/bea64632-51f7-603e-a3c7-32b5c0020aff?t=1644011478318&imageThumbnail=3" alt="">
+                        <h3>FGV</h3>
+                        <p><b>Material Estruturado:</b> <br>
+                            - Para estudantes do 6º ao 9º ano do Ensino Fundamental e do 1º ao 3º ano do EM.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="https://jornalarua.com/wp-content/uploads/2020/05/english-live-arua.png" alt="">
+                        <h3>EF - Education First </h3>
+                        <p> <b>Plataforma e Aplicativo EF: </b><br>
+                        - Curso completo de Inglês para os estudantes do 1º ao 3º ano do EM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <br>
+            <div class="gestores">
+                <h2>Responsáveis</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            
+            <div class="content-foo">
+                <h4>Seduc</h4>
+                <p>Juliana - (65) 99246-5669 <br> 
+                    Joab - (65) 99345-4948</p>
+            </div>
+            <div class="content-foo">
+                <h4>Pearson</h4>
+                <p>Faby Porto Santos <br> 
+                    (19) 99314-9895</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>FGV</h4>
+                <p> Cristiane Caldeira (COPED) <br>
+                    (65) 99663-2098</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>EF</h4>
+                <p>Durval - (11) 97648-1285 <br>
+                    Manu - (11) 99232-8031</p>
+            </div>
+        </div>
+
+ 
+        <h2 class="titulo-final">&copy; Prof. Marcos Souza | Língua Inglesa </h2>
+    </footer>
+</body>
+
+</html>
